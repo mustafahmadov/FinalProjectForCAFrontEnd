@@ -9,6 +9,12 @@ $(document).ready(function(){
       $('.remove').click(function(){
         $('.bottom').removeClass("clicked");
       });
+
+      let userCab = $(".user");
+      userCab.click(function(){
+        $('.user ul').toggleClass('d-block');
+      })
+      
 })
 
 let stickyHeader = document.querySelector("header");
@@ -26,3 +32,6 @@ let stickyHeader = document.querySelector("header");
     $(window).scroll(function () {
         makeStickyNav();
     });
+
+
+  

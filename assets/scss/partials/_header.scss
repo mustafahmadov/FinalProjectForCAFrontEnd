@@ -489,3 +489,19 @@ header {
       }
     }
   }
+  .user{
+    position: relative;
+    ul{
+      flex-direction: column;
+      position: absolute;
+      right: 15%;
+      background: white;
+      padding: 13px;
+      transition: .4s ease-in-out;
+      border-bottom: 4px solid #C40316;
+      border-top: 1px solid #888;
+      li{
+        padding: 4px 10px;
+      }
+    }
+  }
