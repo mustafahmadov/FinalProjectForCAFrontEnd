@@ -30,11 +30,27 @@
                 <ul class="box-top box-top-right pull-right">
 
                     <li class="language-select">
-                        <select>
-                            <option data-display="Select">Azərbaycan</option>
-                            <option value="1">Rus</option>
-                            <option value="2">English</option>
-                        </select>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/images/az-az.png" alt="aze">
+                                Azərbaycan
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/az-az.png" alt="aze">
+                                    Azərbaycan
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/ru-ru.png" alt="aze">
+                                    Русский
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/en-gb.png" alt="aze">
+                                    English
+                                </a>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <i class="fas fa-phone"></i>
@@ -153,7 +169,7 @@
                             placeholder="Bütün mağaza üzrə axtarış..." class="searchText">
                         <div id="sp-btn-search" class="btn-search">
                             <button type="button" id="btn-search-category" class="btn btn-default btn-lg">
-                                <span class="hidden-xs">Axtar</span>
+                                <span class="hidden-xs">Axtar <i class="fas fa-search"></i></span>
                             </button>
                         </div>
                     </div>
