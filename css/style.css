@@ -10,6 +10,13 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 header .container {
   position: relative;
 }
