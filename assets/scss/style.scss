@@ -8,12 +8,6 @@ li{
 body{
   font-family: 'Roboto', sans-serif;
 }
-h1{
-    text-align: center;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 600;
-}
 
 @import '../scss/mixins';
 @import '../scss/partials/header';
@@ -156,6 +150,8 @@ h1{
     h1{
         font-size: 2.2rem;
         font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
     }
     hr{
         background-color: #C40316;
@@ -173,10 +169,10 @@ h1{
     width: 100%;
     position: relative;
     height: auto;
-    background-color: #001d4c;
+    background-color: rgb(121, 18, 28);
   }
   .footer .col {
-    width: 190px;
+    width: 25%;
     height: auto;
     float: left;
     box-sizing: border-box;
@@ -184,29 +180,41 @@ h1{
     -moz-box-sizing: border-box;
     padding: 0px 20px 20px 20px;
   }
+  .contain{
+      padding: 55px 0;
+      padding-left: 4%;
+  }
   .footer .col h1 {
     margin: 0;
     padding: 0;
     font-family: inherit;
-    font-size: 12px;
+    font-size: 21px;
     line-height: 17px;
+    font-weight: 700!important;
     padding: 20px 0px 5px 0px;
-    color: rgba(255,255,255,0.2);
+    color: rgb(255, 255, 255);
     font-weight: normal;
     text-transform: uppercase;
-    letter-spacing: 0.250em;
+    letter-spacing: 0.050em;
+    text-align: start!important;
+  }
+  .footer .col hr{
+    background-color: white;
+    width: 50px;
+    float: left;
   }
   .footer .col ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-top: 27px;
   }
   .footer .col ul li {
-    color: #999999;
-    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 17px;
     font-family: inherit;
     font-weight: bold;
-    padding: 5px 0px 5px 0px;
+    padding: 7px 0px 5px 0px;
     cursor: pointer;
     transition: .2s;
     -webkit-transition: .2s;
@@ -269,6 +277,55 @@ h1{
     }
   }
 
+  .footer-bottom {
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0; 
+
+    p {
+        color: white;
+        margin: 0 !important;
+
+        @include lg{
+            text-align: center;
+        }
+        @include md {
+            text-align: center;
+        }
+
+        a {
+            color: white;
+            font-weight: 600;
+        }
+    }
+
+    .social-medias {
+        @include lg{
+            text-align: center;
+        }
+        ul {
+            margin-bottom: 0 !important;
+
+    
+            @include lg {
+                justify-content: center !important;
+                margin-top: 3%;
+            }
+
+            li {
+                margin-left: 20px;
+
+                a {
+                    color: white;
+
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
 
   .subscribe-area{
       hr{
@@ -308,7 +365,7 @@ h1{
         left: 0;
         border: 0;
         border-radius: 4px;
-        background: #001d4c;
+        background: rgb(173, 10, 26);
         outline: 0;
         padding: 2em 1em 1em 1em;
         color: #222;
