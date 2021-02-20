@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.brands').click(function(){
-        $('#brands').toggleClass('d-block');
+        $('#brands').toggleClass('d-none');
     })
     $('.buy').click(function(){
         $('.bottom').addClass("clicked");
