@@ -14,6 +14,14 @@ $(document).ready(function(){
       userCab.click(function(){
         $('.user ul').toggleClass('d-block');
       })
+
+
+
+        $(".product-item").hover(function(){
+          $(this).children('.caption').children('.inner').children('.button-group').css('opacity','1');
+          }, function(){
+            $(this).children('.caption').children('.inner').children('.button-group').css('opacity','0');
+        });
       
 })
 
@@ -34,4 +42,13 @@ let stickyHeader = document.querySelector("header");
     });
 
 
-  
+    function openNav() {
+        document.getElementById("mySidepanel").style.width = "350px";
+      }
+      
+      /* Set the width of the sidebar to 0 (hide it) */
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+    document.querySelector('.shop').addEventListener('click',openNav);
+      

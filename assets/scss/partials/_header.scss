@@ -2,13 +2,13 @@ header {
     .container {
       position: relative;
     }
-  
+    .collapse{
+    justify-content: center;
+    }
     .wrap {
-    //   height: 91px;
       position: relative;
   
       nav {
-        // min-height: 200px;
         padding: 0;
         background-color: white !important;
         z-index: 1000000;
@@ -346,6 +346,7 @@ header {
       }
       .brands-btn{
         background: #C40316;
+        width: 250px;
         color: #FFFFFF;
         padding: 0.9rem 1.2rem 0.9rem 1.2rem;
         text-transform: uppercase;
