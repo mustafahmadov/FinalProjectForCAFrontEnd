@@ -74,7 +74,7 @@ body{
           width: 60%;
           height: 2p;
           height: 2px;
-          background: #C40316;
+          background: #fe4c1c;
         }
     }
     .product-item{
@@ -100,7 +100,7 @@ body{
                   font-weight: 500;
                   margin: 0;
                   font-size: 1.2rem;
-                  color: #C40316;
+                  color: #fe4c1c;
                   margin-top: 0.7rem;
               }
               .button-group{
@@ -125,7 +125,7 @@ body{
                       outline: none;
                       box-shadow: none;
                       &:hover{
-                          background-color: #C40316;
+                          background-color: #fe4c1c;
                           color: white;
                           transition: .4s ease-in-out;
                       }
@@ -159,11 +159,15 @@ body{
         text-transform: uppercase;
     }
     hr{
-        background-color: #C40316;
+        background-color: #fe4c1c;
         width: 180px;
         height: 2px;
         margin-bottom: 35px;
     }
+}
+
+.clients-logo{
+  border: none;
 }
 
 
@@ -174,7 +178,7 @@ body{
     width: 100%;
     position: relative;
     height: auto;
-    background-color: rgb(121, 18, 28);
+    background-color: #e03d10;
   }
   .footer .col {
     width: 25%;
@@ -376,7 +380,7 @@ body{
         color: #222;
         font-size: 1em;
         transition: background 0.35s ease-out;
-        // border: 2px solid #c40316;
+        // border: 2px solid #fe4c1c;
         
         &:focus {
           background: #001d4c;
@@ -430,5 +434,8 @@ body{
       }
       
       
+  }
+  footer{
+    padding: 60px 10px 20px 10px;
   }
   

@@ -314,7 +314,7 @@ header .navbar-right ul li a span {
   width: 25px;
   height: 25px;
   text-align: center;
-  background-color: #c40316;
+  background-color: #fe4c1c;
   border-radius: 50%;
   left: -12px;
   line-height: 25px;
@@ -329,7 +329,7 @@ header .navbar-right ul li a span {
     width: 18px;
     height: 18px;
     text-align: center;
-    background-color: #c40316;
+    background-color: #fe4c1c;
     border-radius: 50%;
     left: 25px;
     line-height: 19px;
@@ -397,7 +397,7 @@ header .navbar-right ul li a i {
 }
 
 .second-wrap .brands .brands-btn {
-  background: #C40316;
+  background: #fe4c1c;
   width: 250px;
   color: #FFFFFF;
   padding: 0.9rem 1.2rem 0.9rem 1.2rem;
@@ -477,7 +477,7 @@ header .navbar-right ul li a i {
 }
 
 .second-wrap .search-container .btn-search button {
-  background: #C40316;
+  background: #fe4c1c;
   border: none !important;
   padding: 0 1rem;
   border-radius: 5px;
@@ -499,7 +499,7 @@ header .navbar-right ul li a i {
 
 @media (max-width: 767.98px) {
   .second-wrap .search-container .btn-search button {
-    background: #C40316;
+    background: #fe4c1c;
     border: none !important;
     padding: 0 0rem;
     border-radius: 5px;
@@ -578,7 +578,7 @@ header .navbar-right ul li a i {
   background: white;
   padding: 13px;
   transition: .4s ease-in-out;
-  border-bottom: 4px solid #C40316;
+  border-bottom: 4px solid #fe4c1c;
   border-top: 1px solid #888;
 }
 
@@ -741,13 +741,13 @@ header .navbar-right ul li a i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #C40316;
+  border: 1px solid #fe4c1c;
   padding: 30px;
 }
 
 .site-guarantees .icon-area i {
   font-size: 3rem;
-  color: #C40316;
+  color: #fe4c1c;
 }
 
 .site-guarantees .icon-area p {
@@ -842,7 +842,7 @@ header .navbar-right ul li a i {
   width: 60%;
   height: 2p;
   height: 2px;
-  background: #C40316;
+  background: #fe4c1c;
 }
 
 .mixedProducts .product-item {
@@ -874,7 +874,7 @@ header .navbar-right ul li a i {
   font-weight: 500;
   margin: 0;
   font-size: 1.2rem;
-  color: #C40316;
+  color: #fe4c1c;
   margin-top: 0.7rem;
 }
 
@@ -904,7 +904,7 @@ header .navbar-right ul li a i {
 }
 
 .mixedProducts .product-item .caption .inner .button-group button:hover {
-  background-color: #C40316;
+  background-color: #fe4c1c;
   color: white;
   transition: .4s ease-in-out;
 }
@@ -931,10 +931,14 @@ header .navbar-right ul li a i {
 }
 
 .section-heading hr {
-  background-color: #C40316;
+  background-color: #fe4c1c;
   width: 180px;
   height: 2px;
   margin-bottom: 35px;
+}
+
+.clients-logo {
+  border: none;
 }
 
 /* STYLES SPECIFIC TO FOOTER  */
@@ -942,7 +946,7 @@ header .navbar-right ul li a i {
   width: 100%;
   position: relative;
   height: auto;
-  background-color: #79121c;
+  background-color: #e03d10;
 }
 
 .footer .col {
@@ -1225,4 +1229,8 @@ header .navbar-right ul li a i {
 .subscribe-area button.is-done {
   width: 100%;
   opacity: 1;
+}
+
+footer {
+  padding: 60px 10px 20px 10px;
 }
