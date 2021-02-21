@@ -10,10 +10,15 @@ $(document).ready(function(){
         $('.bottom').removeClass("clicked");
       });
 
-      let userCab = $(".user");
-      userCab.click(function(){
+      $('.user a').click(function(e){
+        e.preventDefault();
         $('.user ul').toggleClass('d-block');
       })
+      // let userCab = $(".user");
+      // userCab.click(function(){
+        
+        
+      // })
 
 
 

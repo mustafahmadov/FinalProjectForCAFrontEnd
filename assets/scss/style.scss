@@ -140,6 +140,11 @@ body{
 
 .storeAdvantage{
     padding: 60px 0;
+    .col-md-12{
+        @include lg{
+            display: none;
+        }
+    }
 }
 
 .bestsellers,.newProduct{
