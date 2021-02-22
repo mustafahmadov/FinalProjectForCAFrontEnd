@@ -86,6 +86,19 @@ body{
   }
   .subscribe-section{
       h3{
-          font-size: 23px;
+          font-size: 22px;
+          margin-top: 10px;
+          @include md{
+              font-size: 16px;
+          }
+          @include sm{
+              font-size: 13px;
+          }
+      }
+      hr{
+          @include md{
+              width: 150px;
+              height: 1px;
+          }
       }
   }
