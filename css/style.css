@@ -134,7 +134,7 @@ header .wrap .navbar-nav .nav-item .dropdown-toggle::after {
 }
 
 header .wrap .navbar-nav .nav-item .nav-link {
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #333333;
   background-color: transparent !important;
@@ -669,6 +669,12 @@ header .navbar-right ul li a i {
   height: 330px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 991.98px) {
+  .none {
+    display: none;
+  }
 }
 
 .single-gallery:hover .gallery-img {

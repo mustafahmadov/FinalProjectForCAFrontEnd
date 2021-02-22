@@ -43,6 +43,11 @@
   
     }
   }
+  @include lg{
+      .none{
+          display: none;
+      }
+  }
   
   
   .single-gallery:hover .gallery-img{
