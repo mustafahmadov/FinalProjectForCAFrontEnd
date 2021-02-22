@@ -962,3 +962,7 @@ footer .footer-social a {
 .cart-modal, .view-modal {
   z-index: 1000000000000000000;
 }
+
+.cart-modal .modal-content {
+  border: 2px solid #888 !important;
+}
