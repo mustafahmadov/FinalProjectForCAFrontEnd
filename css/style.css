@@ -284,6 +284,21 @@ header .page-logo .navbar-toggler i {
   }
 }
 
+@media (max-width: 991.98px) {
+  header .navbar-right {
+    position: absolute;
+    top: 21px;
+    right: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header .navbar-right {
+    top: 31px !important;
+    right: 5px;
+  }
+}
+
 header .navbar-right ul {
   display: flex;
   margin-bottom: 0 !important;
@@ -560,7 +575,7 @@ header .navbar-right ul li a i {
   width: 18rem;
   text-align: center;
   line-height: 3.4rem;
-  background-color: #333;
+  background-color: #535050;
   color: #fff;
   border-radius: 3px;
   -webkit-border-radius: 4px;
@@ -745,7 +760,7 @@ header .navbar-right ul li a i {
 
 .site-guarantees {
   margin-top: 5%;
-  padding: 100px 0;
+  padding: 70px 0;
   background-color: ghostwhite;
 }
 
@@ -763,20 +778,21 @@ header .navbar-right ul li a i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   border: 1px solid #fe4c1c;
   padding: 30px;
 }
 
 .site-guarantees .icon-area i {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #fe4c1c;
 }
 
 .site-guarantees .icon-area p {
   margin-bottom: 0 !important;
   color: #222;
-  font-weight: 700;
-  font-size: 1.3rem;
+  font-weight: 600;
+  font-size: 1rem;
   text-transform: uppercase;
   margin-top: 15px;
 }
@@ -798,6 +814,19 @@ header .navbar-right ul li a i {
   }
 }
 
+@media (max-width: 991.98px) {
+  .carousel-section .pay-image {
+    margin-top: 25px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .carousel-section .pay-image {
+    margin-top: 10px !important;
+  }
+}
+
 footer {
   padding: 60px 10px 20px 10px;
 }
@@ -816,53 +845,6 @@ footer .footer-social a {
   color: #e03d10 !important;
 }
 
-/* The sidepanel menu */
-.sidepanel {
-  height: 754px;
-  /* Specify a height */
-  width: 0;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
-  /* Stay in place */
-  z-index: 100000000000;
-  /* Stay on top */
-  top: 0;
-  right: 0;
-  background-color: white;
-  /* Black*/
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 60px;
-  /* Place content 60px from the top */
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidepanel */
-}
-
-/* The sidepanel links */
-.sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidepanel a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Style the button that is used to open the sidepanel */
 .mixedProducts {
   padding: 100px 0;
 }
@@ -877,12 +859,19 @@ footer .footer-social a {
   font-weight: 500;
 }
 
+@media (max-width: 991.98px) {
+  .mixedProducts .head h2 {
+    margin-top: 50px;
+  }
+}
+
 .mixedProducts .head hr {
   float: left;
   width: 60%;
-  height: 2p;
   height: 2px;
   background: #fe4c1c;
+  padding: 0;
+  margin: 5px 0 10px 0;
 }
 
 .mixedProducts .product-item {
@@ -950,7 +939,8 @@ footer .footer-social a {
 }
 
 .storeAdvantage {
-  padding: 60px 0;
+  text-align: center;
+  padding: 10px 0;
 }
 
 @media (max-width: 991.98px) {
@@ -959,15 +949,31 @@ footer .footer-social a {
   }
 }
 
-.bestsellers, .newProduct {
-  padding: 110px 0;
+.storeAdvantage img {
+  height: 200px !important;
+}
+
+.bestsellers, .newProduct, .subscribe-section {
+  padding: 60px 0;
 }
 
 .section-heading h1 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (max-width: 767.98px) {
+  .section-heading h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-heading h1 {
+    font-size: 1.3rem;
+  }
 }
 
 .section-heading hr {
@@ -987,4 +993,43 @@ footer .footer-social a {
 
 .cart-modal .modal-content {
   border: 2px solid #888 !important;
+}
+
+.owl-dots .active {
+  position: relative;
+  z-index: 0;
+}
+
+.owl-dots .active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fe4c1c;
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.owl-dots .owl-dot {
+  user-select: none;
+}
+
+.owl-dots .owl-dot:focus {
+  outline: none;
+}
+
+.owl-dots .owl-dot span {
+  display: block;
+  width: 22px !important;
+  height: 22px !important;
+  margin: 5px;
+  background: white !important;
+  border: 2px solid #cccccc;
+}
+
+.subscribe-section h3 {
+  font-size: 23px;
 }

@@ -9,4 +9,13 @@
         display: flex;
       }
     }
+    .pay-image{
+      @include lg{
+        margin-top: 25px;
+        text-align: center;
+      }
+      @include sm{
+        margin-top: 10px!important;
+      }
+    }
   }

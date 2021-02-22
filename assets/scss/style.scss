@@ -20,47 +20,6 @@ body{
 
 
 
-/* The sidepanel menu */
-.sidepanel {
-    height: 754px; /* Specify a height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 100000000000; /* Stay on top */
-    top: 0;
-    right: 0;
-    background-color: white; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-
-  }
-  
-  /* The sidepanel links */
-  .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidepanel a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* Style the button that is used to open the sidepanel */
-
 .mixedProducts{
     padding: 100px 0;
     .head{
@@ -69,13 +28,17 @@ body{
         h2{
             font-size: 1.5rem;
             font-weight: 500;
+            @include lg{
+                margin-top: 50px;
+            }
         }
         hr{
           float: left;
           width: 60%;
-          height: 2p;
           height: 2px;
           background: #fe4c1c;
+          padding: 0;
+          margin: 5px 0 10px 0;
         }
     }
     .product-item{
@@ -140,24 +103,34 @@ body{
 }
 
 .storeAdvantage{
-    padding: 60px 0;
+    text-align: center;
+    padding: 10px 0;
     .col-md-12{
         @include lg{
             display: none;
         }
     }
+    img{
+        height: 200px!important;
+    }
 }
 
-.bestsellers,.newProduct{
-    padding: 110px 0;
+.bestsellers,.newProduct,.subscribe-section{
+    padding: 60px 0;
 }
 
 .section-heading{
     h1{
-        font-size: 2.2rem;
+        font-size: 2.1rem;
         font-weight: 500;
         text-align: center;
         text-transform: uppercase;
+        @include md{
+            font-size: 1.7rem;
+        }
+        @include sm{
+            font-size: 1.3rem;
+        }
     }
     hr{
         background-color: #fe4c1c;
@@ -182,9 +155,47 @@ body{
     }
 }
 
+
+.owl-dots {
+    .active {
+        position: relative;
+        z-index: 0;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fe4c1c;
+            z-index: 1;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+    }
+
+    .owl-dot {
+        &:focus {
+            outline: none;
+        }
+
+        user-select: none;
+
+        span {
+            display: block;
+            width: 22px!important;
+            height: 22px!important;
+            margin: 5px;
+            background: white !important;
+            border: 2px solid #cccccc;
+        }
+    }
+}
+.subscribe-section{
+    h3{
+        font-size: 23px;
+    }
+}
+
  
-
-
-
-  
-  

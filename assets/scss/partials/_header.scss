@@ -243,6 +243,15 @@ header {
       
     }
     .navbar-right{
+      @include lg{
+        position: absolute;
+        top: 21px;
+        right: 0;
+      }
+      @include sm{
+        top: 31px!important;
+        right: 5px;
+      }
         ul{
             display: flex;
             margin-bottom: 0!important;
@@ -483,7 +492,7 @@ header {
         width: 18rem;
         text-align: center;
         line-height: 3.4rem;
-        background-color: #333;
+        background-color: #535050;
         color: #fff;
         border-radius: 3px;
         -webkit-border-radius: 4px;

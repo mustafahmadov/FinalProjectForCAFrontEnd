@@ -14,11 +14,6 @@ $(document).ready(function(){
         e.preventDefault();
         $('.user ul').toggleClass('d-block');
       })
-      // let userCab = $(".user");
-      // userCab.click(function(){
-        
-        
-      // })
 $('.shop').click(function(){
   if($('.cart-modal').hasClass('fade')){
     $('.cart-modal').removeClass('fade');
@@ -78,6 +73,26 @@ function validateEmail(email) {
     var ex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     return ex.test(email);
 }
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  dots: true,
+  responsive: {
+      0: {
+          items: 1
+      },
+      400: {
+          items: 2
+      },
+      600: {
+          items: 3
+      },
+      1000: {
+          items: 6
+      }
+  }
+});
 
 // email.addEventListener('keydown', function() {
 //   var email = this.value;
