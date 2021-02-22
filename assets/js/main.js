@@ -19,6 +19,18 @@ $(document).ready(function(){
         
         
       // })
+$('.shop').click(function(){
+  if($('.cart-modal').hasClass('fade')){
+    $('.cart-modal').removeClass('fade');
+    $('.cart-modal').css('display','block');
+  }
+})
+ $('.close').click(function(){
+  if(!($('.cart-modal').hasClass('fade'))){
+    $('.cart-modal').addClass('fade');
+    $('.cart-modal').css('display','none');
+  }
+ })
 
 
 
@@ -45,7 +57,7 @@ let stickyHeader = document.querySelector("header");
     $(window).scroll(function () {
         makeStickyNav();
     });
-
+    
 
     function openNav() {
         document.getElementById("mySidepanel").style.width = "350px";
@@ -55,7 +67,9 @@ let stickyHeader = document.querySelector("header");
       function closeNav() {
         document.getElementById("mySidepanel").style.width = "0";
       }
-    document.querySelector('.shop').addEventListener('click',openNav);
+    // document.querySelector(".shop").addEventListener('click',function(){
+    //   $('cart-modal').toggleClass('show');
+    // });
       
     var email = document.getElementById('email'),
     button = document.getElementById('button');
@@ -65,22 +79,22 @@ function validateEmail(email) {
     return ex.test(email);
 }
 
-email.addEventListener('keydown', function() {
-  var email = this.value;
+// email.addEventListener('keydown', function() {
+//   var email = this.value;
   
-  if(validateEmail(email)) {
-    button.classList.add('is-active');
-  }
-});
+//   if(validateEmail(email)) {
+//     button.classList.add('is-active');
+//   }
+// });
 
-button.addEventListener('click', function(e){
-  e.preventDefault();
-  this.classList.add('is-done','is-active');
+// button.addEventListener('click', function(e){
+//   e.preventDefault();
+//   this.classList.add('is-done','is-active');
   
-  setTimeout(function(){ 
-    button.innerHTML = "Təşəkkürlər! Siz abunə oldunuz."
-  }, 500);
-});
+//   setTimeout(function(){ 
+//     button.innerHTML = "Təşəkkürlər! Siz abunə oldunuz."
+//   }, 500);
+// });
 
 
 
