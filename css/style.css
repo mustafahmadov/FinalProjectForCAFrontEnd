@@ -58,7 +58,16 @@ header .wrap nav .navbar-brand {
 
 @media (max-width: 575.98px) {
   header .wrap nav .navbar-brand {
-    left: 41%;
+    left: 47%;
+  }
+}
+
+@media (max-width: 400px) {
+  header .wrap nav .navbar-brand {
+    left: 43%;
+  }
+  header .wrap nav .navbar-brand img {
+    width: 92%;
   }
 }
 
@@ -256,6 +265,13 @@ header .page-logo .navbar-toggler i {
   }
 }
 
+@media (max-width: 400px) {
+  header .page-logo .navbar-toggler {
+    font-size: 1.25rem !important;
+    padding: 0.25rem 0.55rem !important;
+  }
+}
+
 @media (max-width: 991.98px) {
   header .page-logo {
     padding: 31px 0;
@@ -301,10 +317,10 @@ header .navbar-right ul li a {
     border: none;
     border-radius: 50%;
     display: inline-block;
-    width: 43px;
-    height: 43px;
+    width: 39px;
+    height: 39px;
     text-align: center;
-    line-height: 44px;
+    line-height: 39px;
     position: relative;
   }
 }
@@ -326,22 +342,29 @@ header .navbar-right ul li a span {
   header .navbar-right ul li a span {
     border: none;
     position: absolute;
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
     text-align: center;
     background-color: #fe4c1c;
     border-radius: 50%;
     left: 25px;
-    line-height: 19px;
+    line-height: 18px;
     color: white;
     top: 2%;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
 header .navbar-right ul li a i {
   font-size: 1.3rem;
   color: #222;
+}
+
+@media (max-width: 400px) {
+  header .navbar-right ul .user a {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @keyframes fadein {
@@ -377,7 +400,6 @@ header .navbar-right ul li a i {
 
 .second-wrap {
   height: 100px;
-  background: lightgray;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -450,7 +472,7 @@ header .navbar-right ul li a i {
   height: 55px;
   -webkit-border-radius: 3px;
   font-size: 1.1rem;
-  border: 4px solid #ebebeb;
+  border: 3px solid #fe4c1c;
   z-index: 1;
   outline: none;
   padding-left: 32px;

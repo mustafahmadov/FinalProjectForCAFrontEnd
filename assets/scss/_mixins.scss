@@ -61,3 +61,8 @@ $screen-xl-max: 1199.98px;
         @content;
     }
 }
+@mixin common {
+    @media (max-width: #{$screen-common-max}) {
+        @content;
+    }
+}
