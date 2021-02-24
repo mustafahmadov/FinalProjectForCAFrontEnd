@@ -16,13 +16,18 @@ $(document).ready(function(){
       })
 $('.shop').click(function(){
   if($('.cart-modal').hasClass('fade')){
+    $('.modal-backdrop').addClass('show');
+    $('.modal-backdrop').addClass('d-block');
     $('.cart-modal').removeClass('fade');
+
     $('.cart-modal').css('display','block');
   }
 })
  $('.close').click(function(){
   if(!($('.cart-modal').hasClass('fade'))){
+    $('.modal-backdrop').removeClass('d-block');
     $('.cart-modal').addClass('fade');
+    $('.modal-backdrop').removeClass('show');
     $('.cart-modal').css('display','none');
   }
  })
@@ -75,7 +80,7 @@ $('.owl-carousel').owlCarousel({
           items: 3
       },
       1000: {
-          items: 6
+          items: 5
       }
   }
 });

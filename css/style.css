@@ -1156,3 +1156,13 @@ footer .footer-social a {
 .widget {
   margin-top: 6%;
 }
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10400000;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
