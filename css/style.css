@@ -107,6 +107,10 @@ body {
   }
 }
 
+#ht-preloader {
+  z-index: 99999999999999999;
+}
+
 header .container {
   position: relative;
 }
