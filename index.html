@@ -1545,9 +1545,39 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/theme-plugin.js"></script>
     <script src="assets/js/theme-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="assets/js/sweetalert2.js"></script>
 
     <script>
-
+        $('.btn-cart').click(function () {
+            let timerInterval
+            Swal.fire({
+                icon: 'success',
+                html: 'Səbətə əlavə olundu',
+                timer: 1300,
+                timerProgressBar: false,
+                showConfirmButton: false,
+                didOpen: () => {
+                    timerInterval = setInterval(() => {
+                        const content = Swal.getContent()
+                        if (content) {
+                            const b = content.querySelector('b')
+                            if (b) {
+                                b.textContent = Swal.getTimerLeft()
+                            }
+                        }
+                    }, 100)
+                },
+                willClose: () => {
+                    clearInterval(timerInterval)
+                }
+            }).then((result) => {
+                /* Read more about handling dismissals below */
+                if (result.dismiss === Swal.DismissReason.timer) {
+                    console.log('I was closed by the timer')
+                }
+            })
+        })
     </script>
 </body>
 

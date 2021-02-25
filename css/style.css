@@ -203,6 +203,10 @@ header .wrap .navbar-nav .nav-item {
   margin-left: 0 !important;
 }
 
+header .wrap .navbar-nav .nav-item:hover {
+  border-bottom: 3px solid #fe4c1c;
+}
+
 @media (max-width: 991.98px) {
   header .wrap .navbar-nav .nav-item:nth-child(6) {
     padding-top: 6px;
@@ -1073,6 +1077,12 @@ footer .footer-social a {
   border: 1px solid #b2acac7a;
   width: 92%;
   margin-left: 4%;
+  transition: all 300ms ease-in-out;
+}
+
+.mixedProducts .product-item:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.145) !important;
+  transition: all 300ms ease-in-out;
 }
 
 .mixedProducts .product-item .caption {
@@ -1161,8 +1171,17 @@ footer .footer-social a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10400000;
+  z-index: 104000000;
   width: 100vw;
   height: 100vh;
   background-color: #000;
+}
+
+table {
+  padding: 60px 0 !important;
+}
+
+table img {
+  width: 110px;
+  height: 110px;
 }
