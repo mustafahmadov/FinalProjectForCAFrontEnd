@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="assets/css/theme.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <title>Zodiac</title>
@@ -61,7 +62,7 @@
                             <span>Əlaqə : +994709403125</span>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="productCard.html">
                                 <span>
                                     <i class="fas fa-shopping-basket"></i>
                                     Səbət
@@ -133,7 +134,7 @@
                                     </ul>
                                 </li>
                                 <li class="heart">
-                                    <a href="#">
+                                    <a href="wishlist.html">
                                         <i class="far fa-heart"></i>
                                         <span class="heart-count">0</span>
                                     </a>
@@ -153,12 +154,13 @@
 
         </header>
 
-        <div class="second-wrap shadow-sm">
+        <div class="second-wrap">
             <div class="container">
                 <div class="d-flex">
                     <div class="brands">
                         <div class="brands-btn">
                             brendlər
+                            <i class="fas fa-clock ml-1"></i>
                         </div>
                         <ul id="brands" class="brandsList">
                             <li>
@@ -763,20 +765,9 @@
                                 </div>
 
                             </div>
-                            <nav aria-label="Page navigation" class="mt-8">
-                                <ul class="pagination">
-                                    <li class="page-item"><a class="page-link" href="#">Previous</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">Next</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                            <div class="loadMore text-center">
+                                <button id="loadMore" class="btn btn-primary">Daha Çox</button>
+                            </div>
                         </div>
 
                     </div>
@@ -784,6 +775,8 @@
             </section>
 
         </div>
+
+
 
         <!--multi sec start-->
 
@@ -794,12 +787,12 @@
                         <div class="section-heading">
                             <h1>Abunə ol</h1>
                             <h3>
-                                Aşağıda email ünvanını qeyd et və yeniliklərdən həmişə ilk sən xəbərdar ol
+                                Email ünvanını qeyd et və yeniliklərdən həmişə ilk sən xəbərdar ol
                             </h3>
                             <hr>
                         </div>
                         <div class="subscribe-form">
-                            <form id="mc-form" class="row align-items-center no-gutters mb-3">
+                            <form id="mc-form" class="row align-items-center no-gutters ">
                                 <div class="col">
                                     <input value="" name="EMAIL" class="email form-control input-2 bg-white"
                                         id="mc-email" placeholder="Email Ünvanı" required="" type="email">
@@ -814,7 +807,7 @@
                 </div>
             </div>
         </section>
-        <section class="p-0 mt-n11 ">
+        <section class="p-0 mt-n11">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -838,12 +831,13 @@
         </section>
 
         <!--multi sec end-->
-        <!-- FOOTER START -->
+
         <footer class="py-11 bg-dark">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-3"> <a class="footer-logo text-white h2 mb-0" href="index.html">
-                            Zod<span class="text-primary">iac</span>
+                    <div class="col-12 col-lg-3">
+                        <a class="footer-logo text-white h2 mb-0" href="index.html">
+                            <img src="assets/images/download.png" alt="">
                         </a>
                         <p class="my-3 text-muted">Zodiac Watch Store - Azərbaycanda dünya brendlərinin original
                             məhsullarının satışını
@@ -977,14 +971,14 @@
                 </div>
             </div>
         </footer>
-        <!-- END OF FOOTER -->
+
     </div>
 
-
-    <div class="modal cart-modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+    <!-- Cart Modal -->
+    <div class="modal cart-modal fade " id="cartModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content animate__animated animate__fadeInRight">
                 <div class="modal-header">
                     <h5 class="modal-title" id="ModalLabel">Səbətim</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
@@ -1000,13 +994,13 @@
                                     </button>
                                 </div>
                                 <!-- Image -->
-                                <a href="product-details.html">
+                                <a href="product-left-image.html">
                                     <img class="img-fluid" src="assets/images/VT-00002216-370x370.jpg" alt="product">
                                 </a>
                             </div>
                             <div class="col-7">
                                 <!-- Title -->
-                                <h6><a class="link-title" href="product-details.html">Men's Brand Tshirts</a></h6>
+                                <h6><a class="link-title" href="product-left-image.html">Men's Brand Tshirts</a></h6>
                                 <div class="product-meta"><span class="mr-2 text-primary">$27.00</span><span
                                         class="text-muted">x 1</span>
                                 </div>
@@ -1120,7 +1114,7 @@
     </div>
 
 
-    <div class="scroll-top"><a class="smoothscroll" href="#top"><i class="las la-angle-up"></i></a></div>
+    <div class="scroll-top"><a class="smoothscroll" href="#top"><i class="fas fa-angle-up"></i></a></div>
 
 
     <!-- JavaScript Bundle with Popper -->
@@ -1135,7 +1129,42 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/theme-plugin.js"></script>
     <script src="assets/js/theme-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="assets/js/sweetalert2.js"></script>
+
+    <script>
+        $('.btn-cart').click(function () {
+            let timerInterval
+            Swal.fire({
+                icon: 'success',
+                html: 'Səbətə əlavə olundu',
+                timer: 1300,
+                timerProgressBar: false,
+                showConfirmButton: false,
+                didOpen: () => {
+                    timerInterval = setInterval(() => {
+                        const content = Swal.getContent()
+                        if (content) {
+                            const b = content.querySelector('b')
+                            if (b) {
+                                b.textContent = Swal.getTimerLeft()
+                            }
+                        }
+                    }, 100)
+                },
+                willClose: () => {
+                    clearInterval(timerInterval)
+                }
+            }).then((result) => {
+                /* Read more about handling dismissals below */
+                if (result.dismiss === Swal.DismissReason.timer) {
+                    console.log('I was closed by the timer')
+                }
+            })
+        })
+    </script>
 </body>
 
+<div class="modal-backdrop fade d-none"></div>
 
 </html>
