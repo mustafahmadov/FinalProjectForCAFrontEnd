@@ -71,7 +71,7 @@ header {
           margin-left: 2%;
           margin-left: 0 !important;
           &:hover{
-            border-bottom: 3px solid #fe4c1c;
+            border-bottom: 3px solid #A95C00;
           }
           @include lg{
             &:nth-child(6){
@@ -290,7 +290,7 @@ header {
                        width: 25px;
                        height: 25px;
                        text-align: center;
-                       background-color:#fe4c1c;
+                       background-color:#A95C00;
                        border-radius: 50%;
                        left: -12px;
                        line-height: 25px;
@@ -302,7 +302,7 @@ header {
                          width: 17px;
                          height: 17px;
                          text-align: center;
-                         background-color: #fe4c1c;
+                         background-color: #A95C00;
                          border-radius: 50%;
                          left: 25px;
                          line-height: 18px;
@@ -375,7 +375,7 @@ header {
         display: none;
       }
       .brands-btn{
-        background: #fe4c1c;
+        background: #A95C00;
         width: 250px;
         color: #FFFFFF;
         padding: 0.9rem 1.2rem 0.9rem 1.2rem;
@@ -421,7 +421,7 @@ header {
         height: 55px;
         -webkit-border-radius: 3px;
         font-size: 1.1rem;
-        border: 3px solid #fe4c1c;
+        border: 3px solid #A95C00;
         z-index: 1;
         outline: none;
         padding-left: 32px;
@@ -443,7 +443,7 @@ header {
         right: 0;
         top: 0;
         button{
-          background: #fe4c1c;
+          background: #A95C00;
           border: none!important;
           padding: 0 1rem;
           border-radius: 5px;
@@ -461,7 +461,7 @@ header {
             font-size: 0;
           }
           @include md{
-            background: #fe4c1c;
+            background: #A95C00;
             border: none !important;
             padding: 0 0rem;
             border-radius: 5px;
@@ -531,7 +531,7 @@ header {
       background: white;
       padding: 13px;
       transition: .4s ease-in-out;
-      border-bottom: 4px solid #fe4c1c;
+      border-bottom: 4px solid #A95C00;
       border-top: 1px solid #888;
       li{
         padding: 4px 10px;
