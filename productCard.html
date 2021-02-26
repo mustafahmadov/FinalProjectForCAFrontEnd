@@ -238,12 +238,24 @@
                                     <td> <span class="product-price text-muted">$35.00</span>
                                     </td>
                                     <td>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <button class="btn-product btn-product-up"> <i class="fas fa-minus"></i>
-                                            </button>
-                                            <input class="form-product" type="number" name="form-product" value="1">
-                                            <button class="btn-product btn-product-down"> <i class="fas fa-plus"></i>
-                                            </button>
+                                        <div class="d-sm-flex align-items-center mb-5">
+                                            <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+                                            <div class="input-group plus-minus-input">
+                                                <div class="input-group-button">
+                                                    <button type="button" class="button hollow circle"
+                                                        data-quantity="minus" data-field="quantity">
+                                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                                <input class="input-group-field" type="number" name="quantity"
+                                                    value="0">
+                                                <div class="input-group-button">
+                                                    <button type="button" class="button hollow circle"
+                                                        data-quantity="plus" data-field="quantity">
+                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </td>
                                     <td> <span class="product-price text-dark font-w-6">$35.00</span>
@@ -255,21 +267,6 @@
 
                             </tbody>
                         </table>
-                    </div>
-                    <div class="d-md-flex align-items-end justify-content-between border-top pt-5">
-                        <div>
-                            <label class="text-dark h4" for="coupon">Coupon</label>
-                            <p>Enter your coupon code if you have one.</p>
-                            <div class="row form-row">
-                                <div class="col">
-                                    <input class="form-control" id="coupon" placeholder="Coupon Code" type="text">
-                                </div>
-                                <div class="col col-auto">
-                                    <button class="btn btn-dark btn-animated">Kupon tətbiq et</button>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary btn-animated mt-3 mt-md-0">Kartı Yenilə</button>
                     </div>
                 </div>
                 <div class="col-lg-4 pl-lg-5 mt-8 mt-lg-0">
@@ -292,6 +289,78 @@
             </div>
         </div>
     </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-8 offset-sm-2">
+                <div id="content">
+                    <h2>Arzu siyahısı</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <td class="text-center">Şəkil</td>
+                                    <td class="text-left">Məhsulun adı</td>
+                                    <td class="text-left">Qiymət</td>
+                                    <td class="text-right">Say</td>
+                                    <td class="text-right">Ümumi</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td class="text-center">
+                                        <a href="#">
+                                            <img src="assets/images/VT-00000172-370x370.jpg" alt="C9038 SG.G.W"
+                                                title="C9038 SG.G.W">
+                                        </a>
+                                    </td>
+                                    <td class="text-left">
+                                        <a href="#">C9038
+                                            SG.G.W
+                                        </a>
+                                    </td>
+                                    <td class="text-left">VT-00001068</td>
+                                    <td class="text-center">
+                                        <div class="d-sm-flex align-items-center">
+                                            <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+                                            <div class="input-group plus-minus-input">
+                                                <div class="input-group-button">
+                                                    <button type="button" class="button hollow circle"
+                                                        data-quantity="minus" data-field="quantity">
+                                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                                <input class="input-group-field" type="number" name="quantity"
+                                                    value="0">
+                                                <div class="input-group-button">
+                                                    <button type="button" class="button hollow circle"
+                                                        data-quantity="plus" data-field="quantity">
+                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="price"> ₼29.00</div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="buttons clearfix">
+                        <div class="pull-right"><a href="https://saatstore.az/index.php?route=account/account"
+                                class="btn btn-primary">Davam et</a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <footer class="py-11 bg-dark">
