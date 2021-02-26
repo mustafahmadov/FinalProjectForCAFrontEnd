@@ -1226,3 +1226,99 @@ table img {
 .plus-minus-input .input-group-button .circle i {
   color: #A95C00;
 }
+
+.container-fluid p {
+  color: #6c757d;
+}
+
+.container-fluid a {
+  text-decoration: none;
+  color: #A95C00;
+}
+
+.container-fluid a:hover {
+  text-decoration: none;
+  color: #A95C00;
+}
+
+.container-fluid h2 {
+  color: #A95C00;
+  font-size: 1.5rem;
+}
+
+.container-fluid .main_cart {
+  background: #fff;
+}
+
+.container-fluid .card {
+  border: none;
+}
+
+.container-fluid .product_img img {
+  min-width: 200px;
+  max-height: 200px;
+}
+
+.container-fluid .product_name {
+  color: black;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.container-fluid .card-title p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.container-fluid .remove-and-wish p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.container-fluid .price-money h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.container-fluid .set_quantity {
+  position: relative;
+}
+
+.container-fluid .page-link {
+  line-height: 16px;
+  width: 45px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #495057;
+}
+
+.container-fluid .page-item input {
+  line-height: 22px;
+  padding: 3px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-fluid .page-link:hover {
+  text-decoration: none;
+  color: #495057;
+  outline: none !important;
+}
+
+.container-fluid .page-link:focus {
+  box-shadow: none;
+}
+
+.container-fluid .price_indiv p {
+  font-size: 1.1rem;
+}
+
+.container-fluid .fa-heart:hover {
+  color: red;
+}
